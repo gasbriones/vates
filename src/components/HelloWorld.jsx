@@ -1,18 +1,17 @@
-
-
 import React from 'react';
 
-export default class LoginBox extends React.Component {
-    constructor(props) {
+export  default class HelloWorld extends React.Component {
+    constructor (props){
         super(props);
 
     }
 
-    render() {
+    render (){
         return (
             <div>
-                hola mundo
+                <span>Hola mundo con reactJS</span>
             </div>
-        )
+
+        );
     }
 }
