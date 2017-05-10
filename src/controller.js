@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import HelloWorld from './components/Main';
+import HelloWorld from './components/Main';
 
-//ReactDOM.render(<HelloWorld/>,document.querySelector('#root'))
+ReactDOM.render(<HelloWorld/>,document.querySelector('#root'));
 
+
+/*
 var image = React.createElement('img', {
     src: 'https://carlosazaustre.es/blog/content/images/2016/09/ejemplo-jsx.png',
     className: 'icon-image'
@@ -31,4 +33,4 @@ var Icon = (
         />
     </div>);
 
-ReactDOM.render(Icon, document.getElementById('app'));
+ReactDOM.render(Icon, document.getElementById('app')); */
