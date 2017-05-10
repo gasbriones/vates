@@ -1,7 +1,6 @@
 import React from 'react';
-import {colors, users, fruits} from '../data/data'
-import Combo from './Combo';
-import List from './List';
+import {colors, fruits, users} from '../data/data'
+import Cuadros from './Cuadros';
 
 
 export  default class Main extends React.Component {
@@ -12,9 +11,7 @@ export  default class Main extends React.Component {
     render (){
         return (
             <div>
-                <Combo data={colors} />
-                <Combo data={fruits} />
-                <List data={users} />
+               <Cuadros data={colors} />
             </div>
 
         );

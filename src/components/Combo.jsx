@@ -8,8 +8,8 @@ export default class Combo extends React.Component {
         return(
             <div>
                 <select>
-                    {this.props.data.map((item)=>{
-                        return <option value={item}>{item}</option>;
+                    {this.props.data.map((item,index)=>{
+                        return <option value={item} key={index}>{item}</option>;
                     })}
                 </select>
             </div>
