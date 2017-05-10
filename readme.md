@@ -1,3 +1,6 @@
-#Virtual DOM
-React mantiene un virtual DOM propio, en lugar de confiar solamente en el DOM del navegador. Esto deja a la biblioteca 
-determinar qué partes del DOM han cambiado comparando contenidos entre la versión nueva y la almacenada en el virtual DOM, y utilizando el resultado para determinar cómo actualizar eficientemente el DOM del navegador.4
+Hay dos tipos de datos que controlan un componente: props y state. 
+Los props son fijados por el padre y se fijan a lo largo de la vida de un componente. 
+Para los datos que van a cambiar, tenemos que usar el estado.
+
+En general, debe inicializar el state en el constructor y, a continuación, 
+llamar a setState cuando desee cambiarlo.
