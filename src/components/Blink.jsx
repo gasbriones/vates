@@ -1,18 +1,23 @@
 import React from 'react';
 
 export default class Blink extends React.Component {
-    constructor(props) {
+    constructor(props){
         super(props);
-        this.state = {showText: true};
+        this.state = {
+            showText:true
+        };
 
-        // Toggle the state every second
-        setInterval(() => {
-            this.setState({ showText: !this.state.showText });
-        }, 1000);
+        setInterval(()=>{
+            this.setState({
+                showText:!this.state.showText
+            })
+        },1000)
+
     }
 
-    render() {
-        let display = this.state.showText ? 'Hola mundo' : ' ';
+    render (){
+        let display = this.state.showText ? 'Este es el texto a mostrar' : '';
+
         return (
             <div>{display}</div>
         );

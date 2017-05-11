@@ -1,30 +1,33 @@
 import React from 'react';
 
 export default class Clicker extends React.Component {
-    constructor (props) {
-        super(props);
+    constructor (props){
+        super (props);
+
         this.state = {
-            clicks: 0
-        };
+            click:0
+        }
     }
 
-    onCowClick = (evt) => {
+    handleClick = (evt) => {
         this.setState({
-            clicks: this.state.clicks + 1
-        });
-    }
+            click: this.state.click + 1
+        })
+    };
 
-    render() {
+    handleReset = () => {
+        this.setState ({
+            click: 0
+        })
+    };
+
+    render (){
         return (
             <div>
-                <div>Clicks: {this.state.clicks}</div>
-                <img
-                    src="http://s3.bypaulshen.com/buildwithreact/cow.png"
-                    onClick={this.onCowClick}
-                    className="cow"
-                />
-                <p>Click the cow</p>
+                <h1>Clicks: {this.state.click}</h1>
+                <img src="http://s3.bypaulshen.com/buildwithreact/cow.png" onClick={this.handleClick}  />
+                <button onClick={this.handleReset}>Reset</button>
             </div>
         );
     }
-};
+}
