@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import HelloWorld from './components/Main';
+import Blink from './components/Blink'
+import {colors} from './data/data';
+import Combo from './components/Combo';
 
-ReactDOM.render(<HelloWorld/>,document.querySelector('#root'));
+
+import Clicker from './components/Clicker';
+
+ReactDOM.render(<Combo data={colors} />,document.querySelector('#root'));
 
 
 /*
